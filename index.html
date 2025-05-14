@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preload" href="/css/styles.css" as="styles">
+    <link rel="icon" href="img/foca_icon.png">
+    <script src="https://kit.fontawesome.com/71a7ab61a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactic Da Un</title>
+</head>
+<body>
+    <div class="animacion_inicio">
+        <span class="lado_uno"></span><span class="lado_dos"></span><span class="lado_tres"></span>
+    </div>
+    <img class="contenedor_img" src="img/fondo_portafolio_2.jpg">
+    <div class="contenedor animacion">
+        <nav id="navbar" class="nav elemento">
+            <img id="inicio" class="img_logo" src="img/logo_foca.png" onclick="window.location.href='http://127.0.0.1:3000/index.html'">
+        </nav>
+        <section class="presentacion">
+            <img loading="lazy" class="nav_img elemento" src="img/foca.png" onclick="window.location.href='http://127.0.0.1:3000/nosotros.html'">
+            <div class="cuadro_texto">
+                <p class="p_img">Conoce al equipo detrás!!</p>
+                <div class="cola"></div>
+            </div>
+            <div class="presentacion_general">
+                <div class="caja_texto elemento">
+                    <h2 class="h2_presentacion">¡Hola, <span class="text_color">Soy Sifo!</span></h2>
+                    <p class="parrafo_presentacion">Soy parte de un equipo de desarrolladores web, donde convertimos tus ideas en realidad, mediante código eficiente y soluciones creativas.</p>
+                </div>
+                <div class="habilidades_iconos">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/html_icon.png">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/css_icon.png">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/js_icon.png">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/mysql_2.png">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/Github.png">
+                    <img loading="lazy" class="efecto_icono elemento" src="img/git.png">
+                </div>
+            </div>
+        </section>
+        <fieldset class="habilidades">
+            <legend class="h2_habilidades">Proyectos Destacables</legend>
+            <section class="seccion_2">
+                <div class="proyecto elemento">
+                    <div class="texto">
+                        <h2 class="proyecto_info">Living Autumn</h2>
+                        <p class="proyecto_info">Conoce cómo plasmamos la belleza del otoño dentro de una modesta galería de fotos de esta hermosa estación del año, sin olvidarnos de la parte técnica, donde te presentamos un formulario sencillo, pero completamente funcional y una página de inicio que retrata la transición entre estaciones y también el paso por nuestra página.</p>
+                        <a target="_blank" class="github" href=""><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                    <img src="img/proyecto_2.png">                  </div>                
+                <div class="proyecto elemento">
+                    <div class="texto">
+                        <h2 class="proyecto_info">Gimnasio</h2>
+                        <p class="proyecto_info">¿Te gustaría llevar el control de alguno de tus espacios con estilo?, pues esta página creada para el gimnasio de la FES Cuautitlán permitirá darte cuenta que con nosotros es posible que cumplas con esta función para tu vida: llevar un control ordenado y con estilo.</p>
+                        <a target="_blank" class="github" href=""><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                    <img src="img/proyecto_1.png">                </div>                
+                <div class="proyecto elemento">
+                    <div class="texto">
+                        <h2 class="proyecto_info">Web Site Card</h2>
+                        <p class="proyecto_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum minus quis accusantium vitae exercitationem quia, suscipit libero ut fuga tenetur culpa architecto vel laborum! Ut maiores vero perspiciatis aliquid!</p>
+                        <a target="_blank" class="github" href=""><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                    <img src="img/proyecto_3.png">
+                </div>                
+            </section>
+        </fieldset>
+        <section class="servicios elemento">
+            <article class="servicios_menu">
+                <img class="servicios_menu--img" src="img/foca_sandia.jpg">
+                <h2>Sifo</h2>
+                <p onclick="mostrarContenido('desarrollo_web')">Desarrollo web</p>
+                <p onclick="mostrarContenido('diseno_web')">Diseño web</p>
+                <p onclick="mostrarContenido('soporte_tecnico')">Soporte técnico</p>
+                <p onclick="mostrarContenido('seo')">SEO</p>
+                <p onclick="mostrarContenido('diseno_responsivo')">Diseño responsivo</p>
+                <p onclick="mostrarContenido('formularios_contacto')">Formularios de contacto</p>
+            </article>
+            <article class="servicios_info">
+                <h1>Nuestros servicios!</h1>
+                <h4 id="fecha_actual"></h4>
+                <div class="servicio_desc">
+                    <div class="servicio_desc_1" id="servicio_desc"></div>
+                    <div class="boton_desc">
+                        <input class="boton_desc--style" type="button" value="Vamos!" onclick="manejarClick(this)">
+                    </div>
+                </div>
+                <div class="servicio_desc--2">
+                    <div class="servicio_desc_2" id="servicio_desc_2"></div>
+                    <div class="boton_desc">
+                        <input class="boton_desc--style" type="button" value="Si!" onclick="manejarClick(this)">
+                    </div>
+                </div>
+                <div class="servicio_desc--3" id="servicio_desc_3">
+                    <a href="https://www.facebook.com/profile.php?id=61568686273401" target="_blank"><img src="img/facebook_logo.png"></a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer elemento">
+        <h2 class="footer_parrafo">© Copyright Tactic Da Un 2024. Todos los derechos reservados</h2>
+    </footer> 
+    <div id="halo"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

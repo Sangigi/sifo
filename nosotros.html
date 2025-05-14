@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preload" href="/css/nosotros.css" as="styles">
+    <link rel="icon" href="img/foca_icon.png">
+    <script src="https://kit.fontawesome.com/71a7ab61a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactic Da Un</title>
+</head>
+<body>
+    <div class="animacion_inicio">
+        <span class="lado_uno"></span><span class="lado_dos"></span><span class="lado_tres"></span>
+    </div>
+    <div id="overlay">
+        <img loading="lazy" class="contenedor_img" src="img/fondo_portafolio_2.jpg">
+    </div>
+    <div class="animacion">
+        <nav class="nav elemento">
+            <img id="inicio" class="img_logo" src="img/logo_foca.png" onclick="window.location.href='http://127.0.0.1:3000/index.html'">
+        </nav>
+    </div>
+    <section class="nosotros elemento">
+        <div class="nosotros_item" onclick="showModal('Deylan', 'Descripción de Deylan')">
+            <img src="img/deylan.jpg">
+            <div class="text_overlay">Deylan</div>
+        </div>
+        <div class="nosotros_item" onclick="showModal('Andy', 'Descripción de Andy')">
+            <img src="img/andy.jpg">
+            <div class="text_overlay">Andy</div>
+        </div>
+        <div class="nosotros_item" onclick="showModal('Ramón', 'Descripción de Ramón')">
+            <img src="img/ramon.jpg">
+            <div class="text_overlay">Ramón</div>
+        </div>
+        <div class="nosotros_item" onclick="showModal('Leonel', 'Me gusta lo que hago')">
+            <img class="edit_img" src="img/leonel.jpg">
+            <div class="text_overlay">Leonel</div>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <div class="mostrar" id="modalContent">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <button id="closeButton" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+    <footer class="footer elemento">
+        <h2 class="footer_parrafo">© Copyright Tactic Da Un 2024. Todos los derechos reservados</h2>
+    </footer> 
+    <div id="halo"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
